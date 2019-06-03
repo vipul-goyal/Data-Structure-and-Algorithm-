@@ -2,7 +2,7 @@ package project.algorithm.dp;
 
 public class LongestCommonSubstring {
 
-    public static int LCSubStr(char[] X, char[] Y, int m, int n) {
+    private static int LCSubStr(char[] X, char[] Y, int m, int n) {
         int[][] suff = new int[m][n];
         int result = 0;
 
