@@ -1,0 +1,23 @@
+class A{
+	int a=10;
+	public void fun1(){
+		System.out.println("A");
+	}
+}
+class B extends A{
+	int a=20;
+	public void fun1(){
+		System.out.println("B");
+	}
+	public void fun2(){
+		System.out.println("B");
+	}
+}
+public class InheritanceGoneWrong{
+	public static void main(String args[])
+	{
+		A abc=new B();
+		System.out.println(abc.a);
+		abc.fun2();
+	}
+}
